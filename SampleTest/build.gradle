@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.2.2'
+    compile group: 'joda-time', name: 'joda-time', version: '2.9.3'
+}
+
+task hello{
+	 doLast{
+	 	println'this is jenkins build from gitHub'
+	 }
+}
